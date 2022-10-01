@@ -2,3 +2,5 @@ venv
 .config
 .replit
 replit.nix
+poetry.lock
+pyproject.toml
