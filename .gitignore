@@ -1,0 +1,4 @@
+venv
+.config
+.replit
+replit.nix
