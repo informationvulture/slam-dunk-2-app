@@ -1,8 +1,12 @@
-import src.find_players as fp
-from pprint import pprint
-
+import src.intro as i
+from replit import audio
 # If you need to call the API, run this:
 # fp.get_all_players()
+i.intro_txt()
 
-players = fp.load_all_players()
-pprint([i for i in players if i['last_name'] == "Smith"], width=1)
+i.basic_return()
+
+source = audio.play_file("src/sounds/menu_music.mp3")
+
+while True:
+  pass
