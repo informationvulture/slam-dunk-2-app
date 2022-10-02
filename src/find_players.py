@@ -32,3 +32,17 @@ def return_players(fname=None, lname=None):
   else:
     found.append(f)
   return found
+
+def print_players(found):
+  clean_found = []
+  if not found:
+    print("You found no players!")
+  for player in found:
+    data = list(player.items())
+    if data[2]:
+      status = "active"
+    else:
+      status = "inactive"
+    clean_found.append(f"{data[1][1]} is an {status} player with ID: {data[0][1]}")
+  return clean_found
+    
